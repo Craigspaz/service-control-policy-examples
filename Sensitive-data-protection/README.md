@@ -3,7 +3,7 @@
 Implement controls that protect your sensitive data, that should not be made publicly accessible or deleted intentionally or unintentionally. 
 
 
-| Included Policy | Rational | 
+| Included Policy | Rationale | 
 |------|-------------|
 |[Deny resource sharing through AWS Resource access manager outside your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_ram.html#example_ram_1) | Deny users from creating resource shares using AWS RAM that allow sharing with IAM users and roles that aren't part of the organization.|
 |[Deny users from deleting Amazon Glacier vaults or archives](Deny-users-from-deleting-Amazon-Glacier-vaults-or-archives.json)| Restrict users or roles in any affected account from deleting any S3 Glacier vaults or archives.Consider replacing "Resource":"*" with specific sensitive Glacier vaults/archive resources to allow developers freedom to manage other vaults/archives.|
