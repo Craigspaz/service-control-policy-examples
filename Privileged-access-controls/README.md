@@ -2,7 +2,7 @@
 
 Enforce controls to make sure that your roles and applications are given only privileges which are essential to perform their intended function.
 
-| Included Policy | Rational | 
+| Included Policy | Rationale | 
 |------|-------------|
 |[Prevent root credentials management in member accounts in AWS Organizations.](Prevent-root-credentials-management-in-member-accounts-in-AWS-Organizations.json) | Centrally manage root access for member accounts in [AWS Organizations](https://aws.amazon.com/organizations/). Only allow management account sessions to be able to perform actions on root credentials. Note: An SCP restricts permissions for IAM users and roles in member accounts, including the member account's root user. SCPs have no effect on users or roles in the management account.|
 |[Deny the root user from performing actions other than modification to S3 bucket policy](Deny-the-root-user-from-performing-actions-except-S3-bucketpolicy-changes.json)| Consider configuring an administrative user in [AWS IAM Identity Center (successor to AWS Single Sign-On)](https://docs.aws.amazon.com/singlesignon/latest/userguide/getting-started.html) to perform daily tasks. Restrict use of root user with exceptions for S3 bucket policy changes, if you are frequently locked out of S3 buckets. Refer to [Tasks that require root user credentials](https://docs.aws.amazon.com/accounts/latest/reference/root-user-tasks.html)|
