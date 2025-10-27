@@ -2,7 +2,7 @@
 
 Enforce controls to protect your resources in cloud from being modified or deleted. 
 
-| Included Policy | Rational | 
+| Included Policy | Rationale | 
 |------|-------------|
 |[Deny unwanted cancellation or changes to AWS Marketplace product subscription](Deny-unwanted-cancellation-or-changes-to-AWS-Marketplace-product-subscription.json)| Restrict AWS Marketplace product subscription changes to privileged role|
 | [Deny users from deleting Amazon VPC flow logs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_vpc.html#example_vpc_1)|Deny users or roles in any affected account from deleting Amazon Elastic Compute Cloud (Amazon EC2) flow logs or CloudWatch log groups or log streams.|
