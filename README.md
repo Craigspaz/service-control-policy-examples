@@ -26,11 +26,11 @@ The example policies are divided into different categories based on the type of 
 
 * **[Protect cloud platform resource](Protect-cloud-platform-resource/README.md)** : Enforce controls to protect your resources in cloud from being modified or deleted. 
 
-* **[Region Controls](Region-controls/README.md)**: Enforce controls in your multi-account environment to inhibit use of certain AWS Region or Regions.
+* **[Region controls](Region-controls/README.md)**: Enforce controls in your multi-account environment to inhibit use of certain AWS Region or Regions.
   
 * **[Sensitive data protection](Sensitive-data-protection/README.md)**: Implement controls that protect your sensitive data, that should not be made publicly accessible or deleted intentionally or unintentionally.
 
-* **[Service specific controls](Service-Specific-Controls/README.md)**: Controls for specific AWS services
+* **[Service specific controls](Service-specific-controls/README.md)**: Controls for specific AWS services
 
 
 
@@ -42,12 +42,12 @@ The example policies are divided into different categories based on the type of 
 
 If you are just starting to implement SCPs in your environment, consider top recommended SCPs. 
 
-* [Deny member accounts from leaving the organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_general.html#example-scp-leave-org) 
-* [Only allow usage of approved AWS Regions](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_general.html#example-scp-deny-region)
+* [Deny member accounts from leaving the organization](Privileged-access-controls/Deny-member-accounts-from-leaving-your-AWS-organization.json) 
+* [Only allow usage of approved AWS Regions](Region-controls/Deny-access-to-AWS-based-on-the-requested-AWS-region.json)
 * [Prevent root credentials management in member accounts in AWS Organizations.](Privileged-access-controls/Prevent-root-credentials-management-in-member-accounts-in-AWS-Organizations.json) 
-* [Deny usage of the root user](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_general.html#example-scp-root-user)
-* [Deny changes to security services](Deny-changes-to-security-services/Deny-changes-to-security-services.md)
-* [Protect your sensitive Amazon S3 buckets](Sensitive-data-protection/Deny-users-from-deleting-Amazon-S3-Buckets-or-objects.json)
+* [Deny usage of the root user except S3 bucket policy changes](Privileged-access-controls/Deny-the-root-user-from-performing-actions-except-S3-bucketpolicy-changes.json)
+* [Deny changes to security services](Deny-changes-to-security-services/README.md)
+* [Protect your sensitive Amazon S3 buckets](Service-specific-controls/Amazon-S3/Deny-users-from-deleting-Amazon-S3-buckets-or-objects.json)
 
 ## Documentation links
 ------------------------------------------------------------------------------
